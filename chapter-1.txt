@@ -1,0 +1,31 @@
+**** Starting a new Virtual Environment ***
+
+python -m venv myvirtual
+
+**** Activating the virtual environment ****
+
+myvirtual\Scripts\activate
+
+**** Upgrading pip ****
+
+python -m pip install --upgrade pip
+
+**** Installing Flask ****
+
+pip install flask
+
+**** Starting a up a localhost and environment variable ****
+
+set FLASK_APP=flaskblog.py
+flask run
+
+**** Debug Mode using environment variables **** #debug mode is turned on to enable changes can be made without turning off the localhost
+
+set FLASK_DEBUG=1
+
+**** Debug Mode using code editor ****
+
+if __name__ == '__main__' :
+    app.run(debug=True)
+
+
